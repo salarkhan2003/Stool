@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #10b981; /* emerald-500 */
+  --color-primary-dark: #059669; /* emerald-600 */
+  --color-primary-light: #064e3b; /* emerald-900 */
+  --color-primary-soft: #065f46; /* emerald-800 */
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-slate-800/40 backdrop-blur-md border border-white/10 shadow-2xl;
+  }
+  
+  .clay-btn {
+    @apply rounded-2xl transition-all duration-200 active:scale-95 shadow-[4px_4px_10px_rgba(0,0,0,0.3),-2px_-2px_10px_rgba(255,255,255,0.05)] hover:shadow-[6px_6px_15px_rgba(0,0,0,0.4),-3px_-3px_15px_rgba(255,255,255,0.1)];
+  }
+
+  .clay-card {
+    @apply rounded-[2rem] bg-slate-800/50 shadow-[10px_10px_30px_rgba(0,0,0,0.4),-5px_-5px_30px_rgba(255,255,255,0.02)] border border-white/5;
+  }
+  
+  .inner-shadow {
+    @apply shadow-[inset_2px_2px_5px_rgba(0,0,0,0.2),inset_-1px_-1px_5px_rgba(255,255,255,0.05)];
+  }
+}
+
+body {
+  @apply bg-[#0f172a] min-h-screen text-slate-100 antialiased;
+}

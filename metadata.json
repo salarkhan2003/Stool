@@ -1,0 +1,5 @@
+{
+  "name": "Stool",
+  "description": "A personal Life Command Center for immediate thought capture, Top 10 list management, and outreach tracking.",
+  "requestFramePermissions": ["microphone"]
+}

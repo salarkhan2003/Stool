@@ -1,20 +1,31 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Stool - Life Command Center
 
-# Run and deploy your AI Studio app
+A high-performance personal productivity tool built with React, Vite, and Tailwind CSS.
 
-This contains everything you need to run your app locally.
+## Features
+- **Immediate Capture**: High-speed entry for ephemeral thoughts.
+- **Top 10 Engine**: Focused list management capped at 10 items.
+- **Outreach Pipeline**: Track contacts, priorities, and feedback.
+- **Dark Mode**: Sleek glassmorphism/claymorphism UI.
 
-View your app in AI Studio: https://ai.studio/apps/db8e003d-38f0-41ef-8c67-74854f058a00
+## Vercel Deployment
 
-## Run Locally
+This project is optimized for Vercel.
 
-**Prerequisites:**  Node.js
+### 1. Environment Variables
+Ensure you set the following environment variable in your Vercel Project Settings:
+- `GEMINI_API_KEY`: Your Google Gemini API Key (if using AI features).
 
+### 2. Build Settings
+Vercel should automatically detect the settings, but here they are for reference:
+- **Framework Preset**: Vite
+- **Build Command**: `npm run build`
+- **Output Directory**: `dist`
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### 3. SPA Routing
+A `vercel.json` file is included to handle Single Page Application (SPA) routing. This ensures that refreshing the page on a sub-route doesn't result in a 404 error.
+
+## Local Development
+1. Install dependencies: `npm install`
+2. Start dev server: `npm run dev`
+3. Open `http://localhost:3000`

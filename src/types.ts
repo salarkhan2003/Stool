@@ -10,8 +10,8 @@ export interface SubTask {
 export interface OutreachItem {
   id: string;
   title: string;
-  phone_number: string;
-  email: string;
+  phone_numbers: string[];
+  emails: string[];
   current_status: OutreachStatus;
   priority: Priority;
   category: string;
